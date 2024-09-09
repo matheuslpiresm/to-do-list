@@ -15,3 +15,7 @@ A aplicação possui as seguintes funcionalidades:
 - React Native: Biblioteca para desenvolvimento de aplicativos móveis.
 - React: Biblioteca JavaScript para a criação de interfaces de usuário.
 - Expo: Ferramenta e plataforma para React Native.
+
+## Screenshots do App
+
+![Screenshots das interações dentro do aplicativo](./assets/appscreens.jpg)

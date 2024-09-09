@@ -48,7 +48,7 @@ export default function Home() {
         onPress: () => {
           setTasks(prevState => prevState.filter(task => task.name !== taskName));
           setCreatedCount(prevCount => prevCount - 1);
-          Alert.alert('Tarefa deletada com sucesso!');
+          Alert.alert('Tarefa removida com sucesso!');
         }
       },
       {
