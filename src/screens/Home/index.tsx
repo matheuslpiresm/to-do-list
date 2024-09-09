@@ -20,7 +20,7 @@ export default function Home() {
       return Alert.alert('Tarefa inválida', 'Por favor digite uma tarefa');
     }
 
-    if (tasks.some(task => task.name === taskName)) {
+    if (tasks.some(task => task.name.trim().toLowerCase() === taskName.trim().toLowerCase())) {
       Alert.alert('Tarefa já existe', 'Já existe uma tarefa idêntica criada');
       setTaskName('');
       return
@@ -42,7 +42,7 @@ export default function Home() {
   }
 
   function handleTaskRemove(taskName: string) {
-    Alert.alert('Remover', `Deseja remover a tarefa ${taskName}?`, [
+    Alert.alert('Remover', `Deseja remover a tarefa '${taskName}' ?`, [
       {
         text: 'Sim',
         onPress: () => {
